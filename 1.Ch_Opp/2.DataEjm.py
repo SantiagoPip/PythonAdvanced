@@ -15,3 +15,8 @@ class DataClass:
     def fetch_text(self,separator:str):
         df = pd.read_csv(self.file_path)
         print(df.head())
+        
+obj = DataClass("1.Ch_Opp/files/orders.parquet")
+#obj.fetch_text(",")
+#obj.fetch_text("\t")
+obj.fetch_parquet()
